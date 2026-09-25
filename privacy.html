@@ -39,11 +39,11 @@
         <p class="eyebrow"><span data-copy="en">Last updated September 25, 2026</span><span data-copy="vi">Cập nhật lần cuối ngày 25 tháng 9 năm 2026</span></p>
         <div data-copy="en">
           <h1>Privacy, in <span>plain language.</span></h1>
-          <p>PSM II Prep works offline and keeps your study data on your device. The app does not collect personal data, analytics, or advertising identifiers.</p>
+          <p>PSM II Prep keeps detailed study data on your device and uses Firebase Analytics for limited app-usage measurement. It does not use advertising identifiers or cross-app tracking.</p>
         </div>
         <div data-copy="vi">
           <h1>Quyền riêng tư, <span>nói rõ ràng.</span></h1>
-          <p>PSM II Prep hoạt động ngoại tuyến và giữ dữ liệu học trên thiết bị. Ứng dụng không thu thập dữ liệu cá nhân, dữ liệu phân tích hay mã định danh quảng cáo.</p>
+          <p>PSM II Prep giữ dữ liệu học chi tiết trên thiết bị và dùng Firebase Analytics để đo lường giới hạn việc sử dụng ứng dụng. Ứng dụng không dùng mã định danh quảng cáo hay theo dõi chéo ứng dụng.</p>
         </div>
       </div>
     </section>
@@ -62,7 +62,7 @@
 
         <article class="legal-document">
           <div data-copy="en">
-            <p class="notice"><strong>Short version:</strong> PSM II Prep has no account system, analytics SDK, advertising SDK, tracking, or server sync. Your study history stays on your device.</p>
+            <p class="notice"><strong>Short version:</strong> PSM II Prep has no account, advertising, IDFA, cross-app tracking, or server sync for study records. It uses Firebase Analytics for limited feature-usage and aggregate performance events.</p>
 
             <section id="scope">
               <h2>1. Scope</h2>
@@ -72,8 +72,9 @@
 
             <section id="collection">
               <h2>2. Data we collect</h2>
-              <p>The app does not collect or transmit personal data. It does not include analytics, advertising, cross-app tracking, or third-party data collection SDKs.</p>
-              <p>We do not receive your answers, scores, study activity, device identifiers, location, contacts, photos, microphone data, or payment information through the app.</p>
+              <p>The app uses Firebase Analytics to record limited events such as screens opened, features and practice modes used, quiz starts and completions, aggregate score and question counts, selected app language, and reminder permission state.</p>
+              <p>Firebase may also process an app instance identifier and technical information such as app version, operating system, device model, language, and general location derived from network information.</p>
+              <p>We do not send Firebase your learner name, planned exam date, selected answers, essay text, question text, contacts, photos, microphone data, payment information, or advertising identifier.</p>
             </section>
 
             <section id="local-data">
@@ -84,30 +85,31 @@
                 <li>Incorrect, skipped, and bookmarked questions.</li>
                 <li>Planned exam date, selected language, and app preferences.</li>
               </ul>
-              <p>This information remains on your device and is not uploaded to us. The app currently does not provide account-based backup or cross-device sync.</p>
+              <p>These detailed study records remain on your device. Analytics may include aggregate results and feature actions, but not your answer content or essay text. The app does not provide account-based backup or cross-device sync.</p>
             </section>
 
             <section>
               <h2>4. Offline operation and network access</h2>
-              <p>The question bank and core study features are included in the app and work offline. The app does not need a ViUniverse server to store or process your progress.</p>
+              <p>The question bank and core study features are included in the app and work offline. Firebase Analytics sends queued usage events when a network connection is available; your detailed study records are not synced to a ViUniverse server.</p>
               <p>If you choose an external link or email action, iOS opens the relevant Apple or third-party service. That service processes information under its own privacy policy.</p>
             </section>
 
             <section id="services">
-              <h2>5. Apple and support services</h2>
+              <h2>5. Firebase, Apple, and support services</h2>
+              <p>Google processes Firebase Analytics data on our behalf under its applicable terms, privacy policy, security measures, and the retention settings configured for the Firebase project.</p>
               <p>Apple may independently process App Store downloads, diagnostics, account, or device information under Apple’s own terms and privacy policy. We do not control Apple’s processing.</p>
               <p>If you email support, we receive the email address, message, and attachments you choose to send. We use that information only to respond, investigate the issue, and improve the app. Do not send sensitive personal or financial information.</p>
             </section>
 
             <section>
               <h2>6. Advertising, analytics, and sales</h2>
-              <p>PSM II Prep contains no advertising and does not use analytics or tracking technologies. We do not sell or rent personal information.</p>
+              <p>PSM II Prep contains no advertising and does not use IDFA or cross-app tracking. Firebase Analytics is used only for product analytics. We do not sell or rent personal information.</p>
             </section>
 
             <section id="choices">
               <h2>7. Your choices and data deletion</h2>
               <p>You control study data directly in the app and on your device. You can use the app’s reset option to remove supported progress data. Deleting the app removes its locally stored data.</p>
-              <p>Because the app does not send study data to us, we cannot recover local progress after it is reset or the app is deleted.</p>
+              <p>Because detailed study records are not synced to us, we cannot recover local progress after it is reset or the app is deleted. Previously collected aggregate analytics may remain under Firebase retention settings and are not connected to an app account.</p>
             </section>
 
             <section>
@@ -132,7 +134,7 @@
           </div>
 
           <div data-copy="vi">
-            <p class="notice"><strong>Tóm tắt:</strong> PSM II Prep không có hệ thống tài khoản, SDK phân tích, SDK quảng cáo, theo dõi hay đồng bộ máy chủ. Lịch sử học ở lại trên thiết bị của bạn.</p>
+            <p class="notice"><strong>Tóm tắt:</strong> PSM II Prep không có tài khoản, quảng cáo, IDFA, theo dõi chéo ứng dụng hay đồng bộ máy chủ cho hồ sơ học. Ứng dụng dùng Firebase Analytics cho sự kiện sử dụng tính năng và kết quả tổng hợp ở mức giới hạn.</p>
 
             <section id="scope-vi">
               <h2>1. Phạm vi</h2>
@@ -142,8 +144,9 @@
 
             <section id="collection-vi">
               <h2>2. Dữ liệu chúng tôi thu thập</h2>
-              <p>Ứng dụng không thu thập hoặc truyền dữ liệu cá nhân. Ứng dụng không chứa công cụ phân tích, quảng cáo, theo dõi chéo ứng dụng hay SDK thu thập dữ liệu của bên thứ ba.</p>
-              <p>Chúng tôi không nhận đáp án, điểm số, hoạt động học, mã định danh thiết bị, vị trí, danh bạ, ảnh, dữ liệu microphone hay thông tin thanh toán của bạn thông qua ứng dụng.</p>
+              <p>Ứng dụng dùng Firebase Analytics để ghi nhận giới hạn các sự kiện như màn hình đã mở, tính năng và chế độ luyện đã dùng, lượt bắt đầu và hoàn thành bài, điểm số và số lượng câu hỏi tổng hợp, ngôn ngữ ứng dụng và trạng thái quyền nhắc lịch.</p>
+              <p>Firebase cũng có thể xử lý mã định danh phiên bản cài đặt và thông tin kỹ thuật như phiên bản ứng dụng, hệ điều hành, mẫu thiết bị, ngôn ngữ và vị trí chung được suy ra từ thông tin mạng.</p>
+              <p>Chúng tôi không gửi cho Firebase tên người học, ngày thi dự kiến, đáp án đã chọn, nội dung tự luận, nội dung câu hỏi, danh bạ, ảnh, dữ liệu microphone, thông tin thanh toán hay mã định danh quảng cáo.</p>
             </section>
 
             <section id="local-data-vi">
@@ -154,30 +157,31 @@
                 <li>Câu sai, câu bỏ qua và câu đã đánh dấu.</li>
                 <li>Ngày thi dự kiến, ngôn ngữ đã chọn và tùy chọn ứng dụng.</li>
               </ul>
-              <p>Thông tin này ở lại trên thiết bị và không được tải lên cho chúng tôi. Ứng dụng hiện không có sao lưu theo tài khoản hoặc đồng bộ giữa các thiết bị.</p>
+              <p>Các hồ sơ học chi tiết này ở lại trên thiết bị. Dữ liệu phân tích có thể gồm kết quả tổng hợp và thao tác tính năng, nhưng không gồm nội dung đáp án hay bài tự luận. Ứng dụng không có sao lưu theo tài khoản hoặc đồng bộ giữa các thiết bị.</p>
             </section>
 
             <section>
               <h2>4. Hoạt động ngoại tuyến và truy cập mạng</h2>
-              <p>Ngân hàng câu hỏi và tính năng học cốt lõi có sẵn trong ứng dụng và hoạt động ngoại tuyến. Ứng dụng không cần máy chủ ViUniverse để lưu hoặc xử lý tiến độ.</p>
+              <p>Ngân hàng câu hỏi và tính năng học cốt lõi có sẵn trong ứng dụng và hoạt động ngoại tuyến. Firebase Analytics gửi các sự kiện sử dụng đã xếp hàng khi có kết nối mạng; hồ sơ học chi tiết không được đồng bộ lên máy chủ ViUniverse.</p>
               <p>Nếu bạn chọn liên kết ngoài hoặc gửi email, iOS sẽ mở dịch vụ Apple hoặc dịch vụ bên thứ ba tương ứng. Dịch vụ đó xử lý thông tin theo chính sách quyền riêng tư riêng.</p>
             </section>
 
             <section id="services-vi">
-              <h2>5. Dịch vụ Apple và hỗ trợ</h2>
+              <h2>5. Dịch vụ Firebase, Apple và hỗ trợ</h2>
+              <p>Google xử lý dữ liệu Firebase Analytics thay mặt chúng tôi theo điều khoản, chính sách quyền riêng tư, biện pháp bảo mật áp dụng và cấu hình lưu trữ của dự án Firebase.</p>
               <p>Apple có thể tự xử lý thông tin tải xuống App Store, chẩn đoán, tài khoản hoặc thiết bị theo điều khoản và chính sách quyền riêng tư của Apple. Chúng tôi không kiểm soát hoạt động xử lý của Apple.</p>
               <p>Nếu bạn gửi email hỗ trợ, chúng tôi nhận địa chỉ email, nội dung và tệp đính kèm do bạn chọn gửi. Chúng tôi chỉ dùng thông tin đó để phản hồi, điều tra vấn đề và cải thiện ứng dụng. Không gửi thông tin cá nhân nhạy cảm hoặc thông tin tài chính.</p>
             </section>
 
             <section>
               <h2>6. Quảng cáo, phân tích và bán dữ liệu</h2>
-              <p>PSM II Prep không chứa quảng cáo và không dùng công nghệ phân tích hay theo dõi. Chúng tôi không bán hoặc cho thuê thông tin cá nhân.</p>
+              <p>PSM II Prep không chứa quảng cáo và không dùng IDFA hay theo dõi chéo ứng dụng. Firebase Analytics chỉ được dùng để phân tích sản phẩm. Chúng tôi không bán hoặc cho thuê thông tin cá nhân.</p>
             </section>
 
             <section id="choices-vi">
               <h2>7. Lựa chọn và xóa dữ liệu</h2>
               <p>Bạn kiểm soát dữ liệu học trực tiếp trong ứng dụng và trên thiết bị. Bạn có thể dùng tùy chọn đặt lại của ứng dụng để xóa dữ liệu tiến độ được hỗ trợ. Xóa ứng dụng sẽ xóa dữ liệu cục bộ của ứng dụng.</p>
-              <p>Vì ứng dụng không gửi dữ liệu học cho chúng tôi, chúng tôi không thể khôi phục tiến độ cục bộ sau khi đặt lại hoặc xóa ứng dụng.</p>
+              <p>Vì hồ sơ học chi tiết không được đồng bộ cho chúng tôi, chúng tôi không thể khôi phục tiến độ cục bộ sau khi đặt lại hoặc xóa ứng dụng. Dữ liệu phân tích tổng hợp đã thu thập trước đó có thể còn lại theo cấu hình lưu trữ Firebase và không được liên kết với tài khoản ứng dụng.</p>
             </section>
 
             <section>
